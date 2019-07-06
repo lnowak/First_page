@@ -15,7 +15,7 @@ header {
     background-color: black;
 }
 
-span {
+.lightblue {
     color: aquamarine;
 }
 
@@ -159,4 +159,95 @@ div {
     width: 270px;
     text-transform: uppercase;
     font-size: 25px;
+}
+
+.foto {
+    display: flex;
+    justify-content: space-around;
+    padding: 28px 70px 60px 65px;
+
+}
+
+.foto_item {
+    display: inline-block;
+    width: 33%;
+    padding-bottom: 30px;
+}
+
+
+.foto_item:last-child {
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+#foto_item-title {
+    font-weight: bold;
+    border-bottom: 7px solid aquamarine;
+    width: max-content;
+}
+
+.foto_item-text {
+    padding: 15px 5px 15px 0;
+}
+
+.none {
+    color: white;
+}
+
+.offers {
+    height: 600px;
+    background-color: lavender;
+}
+
+.choice_title {
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.footer-item1 {
+    color: grey;
+    width: 30%;
+    justify-content: flex-start;
+}
+
+.footer-item2 {
+    width: 55%;
+    justify-content: flex-end;
+}
+
+.footer-item3 {
+    color: grey;
+    text-transform: uppercase;
+    justify-content: flex-end;
+    border: 1px blue solid;
+    width: 15%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.footer-item2_class {
+    display: flex;
+    align-items: flex-end;
 }
