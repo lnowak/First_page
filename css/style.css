@@ -109,6 +109,18 @@ div {
     position: relative;
 }
 
+.dfirst {
+    position: absolute;
+    top: 200px;
+    left: 80px;
+}
+
+.dfirst p {
+    font-size: 70px;
+    font-weight: bold;
+    color: aquamarine;
+}
+
 .chair {
     background-image: url('../images/black_chair.png');
     width: 420px;
@@ -161,17 +173,31 @@ div {
     font-size: 25px;
 }
 
+.dlast {
+    position: absolute;
+    top: 200px;
+    right: 80px;
+}
+
+.dlast p {
+    font-size: 70px;
+    font-weight: bold;
+    color: aquamarine;
+}
+
+
+
 .foto {
     display: flex;
     justify-content: space-around;
-    padding: 28px 70px 60px 65px;
+    padding: 30px 70px 30px 65px;
 
 }
 
 .foto_item {
     display: inline-block;
     width: 33%;
-    padding-bottom: 30px;
+    padding-bottom: 0;
 }
 
 
@@ -190,32 +216,105 @@ div {
     padding: 15px 5px 15px 0;
 }
 
+.textDiv1 {
+    background-color: rgba(255, 255, 255, 0.4);
+    position: relative;
+    bottom: 70px;
+    padding: 10px 135px 10px 20px;
+}
+
+.textDiv2 {
+    background-color: rgba(255, 255, 255, 0.4);
+    position: relative;
+    bottom: 70px;
+    padding: 10px 55px 10px 20px;
+}
+
+.chairText {
+    font-size: 25px;
+    padding: auto;
+    border-bottom: 7px solid aquamarine;
+}
+
 .none {
-    color: white;
+    color: rgba(255, 255, 255, 0);
 }
 
 .offers {
     height: 600px;
     background-color: lavender;
+    display: flex;
+    align-items: flex-start;
+}
+
+.offers-menu {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    padding-left: 65px;
+    padding-right: 70px;
 }
 
 .choice_title {
     text-transform: uppercase;
+    height: 60px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 7px solid aquamarine;
+    width: 28%;
+}
 
+.choice {
+    display: flex;
+    flex-direction: row;
+    width: 1070px;
+    justify-content: space-around;
+
+}
+
+.offers-item {
+    display: flex;
+    width: 33%;
+    justify-content: center;
+    border: 1px solid grey;
+    padding: 10px;
+    position: relative;
+    background-color: white;
+}
+
+.offers-item:before {
+    position: absolute;
+    content: '';
+    display:flex;
+    border: 1px solid grey;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    top: -27px;
+    background-color: grey;
+    z-index: 3;
+}
+
+.offers-item:after {
+    position: absolute;
+    content: '';
+    display:flex;
+    border: 1px solid grey;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    top: -42px;
+    background-color: white;
+    z-index: 2;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
+.hidden {
+    display: none;
+}
 
 footer {
     display: flex;
